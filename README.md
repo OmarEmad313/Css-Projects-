@@ -1,2 +1,2 @@
 # Css-Projects
-#This repo contains multiple css projects I am working on
+this repo contains multiple pure html and css projects I am working on to practice css 
