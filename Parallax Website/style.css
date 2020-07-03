@@ -5,6 +5,7 @@
 }
 body {
   margin: 0;
+  background-color: #1e62d0;
 }
 .pimg {
   display: flex;
