@@ -63,6 +63,7 @@ body {
 .menu-list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
@@ -136,4 +137,37 @@ body {
 .main-dish h2,
 p {
   margin-left: 3%;
+}
+@media only screen and (max-width: 2800px) {
+  .wrapper {
+    display: grid;
+    grid-gap: 1em;
+  }
+  .menu {
+    grid-column: 1/7;
+    grid-row: 1/2;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .slider {
+    grid-column: 1/7;
+    grid-row: 2/4;
+  }
+  .discount-1 {
+    grid-column: 1/7;
+    grid-row: 4/5;
+  }
+  .discount-2 {
+    grid-column: 1/7;
+    grid-row: 5/6;
+  }
+  .catagories {
+    grid-column: 1/7;
+    grid-row: 6/7;
+    flex-direction: column;
+  }
+  .main-dish {
+    grid-column: 1/7;
+    grid-row: 7/8;
+  }
 }
