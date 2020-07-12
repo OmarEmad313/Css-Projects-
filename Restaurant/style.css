@@ -70,9 +70,10 @@ body {
   margin-bottom: 3em;
 }
 .menu-list li {
+  margin-top: 1em;
   font-size: 100px;
   padding: 1em 1em 1em 1em;
-  background: radial-gradient(rgba(53, 0, 159, 1), rgba(14, 193, 255, 0.54));
+  background-color: #9cd08f;
 }
 .slider {
   grid-column: 1/5;
@@ -147,9 +148,12 @@ p {
     grid-column: 1/7;
     grid-row: 1/2;
     flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
   }
   .slider {
+    background-image: none;
+    background-color: indigo;
     grid-column: 1/7;
     grid-row: 2/4;
   }
@@ -167,7 +171,11 @@ p {
     flex-direction: column;
   }
   .main-dish {
+    background: hotpink;
     grid-column: 1/7;
     grid-row: 7/8;
+  }
+  .main-dish a {
+    margin: 4em 4em 4em 4em;
   }
 }
