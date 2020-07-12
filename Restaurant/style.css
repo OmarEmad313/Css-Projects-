@@ -22,3 +22,17 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+.slider {
+  border-color: yellow;
+  background-image: url("img/Taco_Crispy_Beef_990x725.jpg");
+}
+[class*="discount-"] {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  border-radius: 20px;
+  border-color: yellow;
+}
+[class*="discount-"] h2 {
+  color: yellowgreen;
+}
