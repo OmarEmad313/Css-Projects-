@@ -4,9 +4,7 @@
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(249, 255, 255);
 }
-#menu {
-  display: none;
-}
+
 header {
   margin-top: 0;
   position: fixed;
@@ -15,9 +13,7 @@ header {
   height: 70px;
   background-color: rgb(0, 0, 0);
 }
-.menu-bar {
-  display: none;
-}
+
 .title {
   float: left;
   margin: 20px 7px;
@@ -27,7 +23,7 @@ header {
   color: rgb(45, 45, 45);
 }
 .logout_btn {
-    cursor: pointer;
+  cursor: pointer;
   float: right;
   margin: 22px 10px;
   font-weight: 400;
@@ -72,6 +68,14 @@ aside {
 span:hover {
   color: rgb(45, 45, 45);
 }
+ #menu:checked ~ .aside{
+    left: 100%;
+    color: salmon;
+  }
+
+.menu-bar {
+  display: none;
+}
 @media (max-width: 860px) {
   .sidebar_content a span {
     display: none;
@@ -97,24 +101,22 @@ span:hover {
   .logout_btn {
     display: none;
   }
+
   .menu-bar {
-      cursor: pointer;
-      display: block;
-    color:white;
+    cursor: pointer;
+    display: block;
+    color: white;
     float: right;
     font-size: 30px;
     margin: 22px 10px;
     font-weight: 400;
-  }
+  } 
   aside {
-    width: 100%;
-   left:100%;
-   transition: 0.5s;
-  
-  }
-  #menu :checked ~ .aside{
     left: 0%;
+    width: 100%;
+    transition: all 0.5s;
   }
+
   .sidebar_content a span {
     display: block;
     margin-left: 10px;
