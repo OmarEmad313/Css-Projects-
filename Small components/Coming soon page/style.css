@@ -105,7 +105,7 @@ section h2 {
   transition: hover 0.5s;
   cursor: pointer;
 }
-}
+
 .newsletter button:hover {
   background-color: #62760c;
   width: 134px;
