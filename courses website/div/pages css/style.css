@@ -1,9 +1,74 @@
- <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Patua+One&display=swap" rel="stylesheet"> 
+* {
+  box-sizing: border-box;
+}
 body {
-  font-family: "Patua One", cursive;
+  margin: 0;
+  padding: 0;
+  color: rgb(62, 84, 124);
+  font-family: "Open Sans", sans-serif;
 }
 h1,
 h2,
 h3 {
-  font-family: "Open Sans", sans-serif;
+  color: rgb(21, 37, 66);
+  font-family: "Patua one", cursive;
+}
+header {
+  width: 100%;
+  height: 5rem;
+  background-color: #01a9b4;
+  display: flex;
+}
+header .title {
+  display: block;
+  flex-grow: 1;
+  font-size: 25px;
+  margin: 20px;
+  color: #f1ebbb;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+header .tabs {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.tabs a {
+  font-size: 18px;
+  margin: 20px 30px;
+  color: #fbfd8a;
+}
+.tabs a:last-child {
+  padding: 7px;
+  border: solid 0;
+  border-radius: 4px;
+  color: #ffd36b;
+  background-color: #086972;
+}
+.tabs a:last-child:hover {
+  background-color: #87dfd6;
+}
+.tabs a:link {
+  text-decoration: none;
+}
+.tabs a:hover {
+  color: #eebb4d;
+}
+.free_training {
+  width: 100%;
+  height: 400px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background: url("../../src/imgs/arnold-francisca-FBNxmwEVpAc-unsplash.jpg") 0%
+    0%/50% 100% no-repeat, rgb(240, 240, 240);
+}
+.part_1 {
+  width: 50%;
+}
+.part_2 {
+  width: 50%;
+  padding: 10px;
 }
