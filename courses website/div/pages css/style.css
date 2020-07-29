@@ -1,22 +1,36 @@
+/*
+main:
+0, 35, 62
+0, 35, 108
+0, 35, 208
+Greys:
+61 61 61
+107 107 107
+209 209 209
+Accent:
+rgb(255,214,0)
+rgb(255,235,59)
+247, 208, 2
+*/
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
   padding: 0;
-  color: rgb(62, 84, 124);
+  color: rgb(107 107 107);
   font-family: "Open Sans", sans-serif;
 }
 h1,
 h2,
 h3 {
-  color: rgb(21, 37, 66);
+  color: rgb(0, 35, 108);
   font-family: "Patua one", cursive;
 }
 header {
   width: 100%;
   height: 5rem;
-  background-color: #01a9b4;
+  background-color: rgb(0, 35, 62);
   display: flex;
 }
 header .title {
@@ -37,38 +51,78 @@ header .tabs {
 .tabs a {
   font-size: 18px;
   margin: 20px 30px;
-  color: #fbfd8a;
+  color: rgb(209 209 209);
 }
 .tabs a:last-child {
   padding: 7px;
   border: solid 0;
   border-radius: 4px;
-  color: #ffd36b;
-  background-color: #086972;
+  color: rgb(61, 61, 61);
+  background-color: rgb(247, 208, 2);
 }
 .tabs a:last-child:hover {
-  background-color: #87dfd6;
+  background-color: rgb(0, 35, 208);
 }
 .tabs a:link {
   text-decoration: none;
 }
 .tabs a:hover {
-  color: #eebb4d;
+  color: rgb(247, 208, 2);
 }
 .free_training {
   width: 100%;
   height: 400px;
-  padding: 10px 10px;
+  position: relative;
+ 
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  background: url("../../src/imgs/arnold-francisca-FBNxmwEVpAc-unsplash.jpg") 0%
-    0%/50% 100% no-repeat, rgb(240, 240, 240);
+  background:url("../../src/imgs/filiberto-santillan-1HCb2gPk3ik-unsplash.jpg") 50% /cover  no-repeat , rgb(240, 240, 240);
+}
+.free_training::before{
+  content:"" ;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+background:rgba(61 ,61 ,61, 0.3);
+z-index: 0;
 }
 .part_1 {
-  width: 50%;
+width: 50%;
 }
 .part_2 {
+z-index: 1;
   width: 50%;
-  padding: 10px;
+  padding: 20px;
+}
+.free_training button {
+  padding: 7px;
+  border: none;
+  border-radius: 10px;
+  color: rgb(61, 61, 61);
+  background-color: rgb(255, 235, 59);
+  font-size: 14px;
+  box-shadow: none;
+}
+.free_training button:hover {
+  box-shadow: 1px 1px inset, 1px 1px;
+}
+.companies {
+  width: 100%;
+  background-color: rgb(107 107 107);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background: url("https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-icon-marilyn-scott-0.png")
+      25% 30px /75px 75px no-repeat,
+    url("https://www.freepnglogos.com/uploads/new-google-logo-transparent--14.png")
+      50% 10px/ 150px 100px no-repeat,
+    url("https://www.freepnglogos.com/uploads/netflix-logo-circle-png-5.png")
+      75% 36px/ 75px 60px no-repeat;
+}
+.companies p {
+  margin: 20px;
+  color: rgb(255, 214, 0);
 }
