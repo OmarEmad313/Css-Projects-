@@ -24,13 +24,13 @@ body {
 h1,
 h2,
 h3 {
-  color: rgb(0, 35, 108);
+  color: rgb(0, 35, 208);
   font-family: "Patua one", cursive;
 }
 header {
   width: 100%;
   height: 5rem;
-  background-color: rgb(0, 35, 62);
+  background-color: rgb(0, 35, 108);
   display: flex;
 }
 header .title {
@@ -71,29 +71,27 @@ header .tabs {
 }
 .free_training {
   width: 100%;
-  height: 400px;
+  height: 640px;
   position: relative;
- 
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  background:url("../../src/imgs/filiberto-santillan-1HCb2gPk3ik-unsplash.jpg") 50% /cover  no-repeat , rgb(240, 240, 240);
-}
-.free_training::before{
-  content:"" ;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-background:rgba(61 ,61 ,61, 0.3);
-z-index: 0;
+  background: url("../../src/imgs/javascript-js-seeklogo.com.svg") 0 /50% 100% no-repeat,
+    linear-gradient(to right, #f7df1e, #f7df1e 50%,transparent 50%);
 }
 .part_1 {
-width: 50%;
+  width: 50%;
 }
 .part_2 {
-z-index: 1;
-  width: 50%;
-  padding: 20px;
+  width: 40%;
+  padding:0px 20px;
+}
+.part_2 h1{
+  font-size: 33px;
+
+}
+.part_2 p{
+  font-size: 20px;
 }
 .free_training button {
   padding: 7px;
@@ -101,7 +99,7 @@ z-index: 1;
   border-radius: 10px;
   color: rgb(61, 61, 61);
   background-color: rgb(255, 235, 59);
-  font-size: 14px;
+  font-size: 29px;
   box-shadow: none;
 }
 .free_training button:hover {
@@ -109,20 +107,58 @@ z-index: 1;
 }
 .companies {
   width: 100%;
-  background-color: rgb(107 107 107);
-  height: 300px;
+  height: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: flex-end;
+ 
+  flex-wrap: wrap;
+  background-color: rgb(107 107 107);
   background: url("https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-icon-marilyn-scott-0.png")
       25% 30px /75px 75px no-repeat,
     url("https://www.freepnglogos.com/uploads/new-google-logo-transparent--14.png")
       50% 10px/ 150px 100px no-repeat,
     url("https://www.freepnglogos.com/uploads/netflix-logo-circle-png-5.png")
       75% 36px/ 75px 60px no-repeat;
+      background-color:rgb(236, 236, 236) ;
 }
 .companies p {
+font-size: 33px;
+  text-align: center;
   margin: 20px;
-  color: rgb(255, 214, 0);
+  color: rgb(107, 107 ,107);
+}
+.question{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  width:100vw;
+  height:500px ;
+  font-size: 40px;
+  color:rgb(61,61,61) ;
+
+}
+.question p{
+  text-align: center;
+margin: 0;
+}
+.programs{
+  width: 100vw;
+  height: 600px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+
+}
+[class*="program_"]{
+  margin: 20px;
+  height: 600px;
+width: 33%;
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: flex-start;
+
 }
