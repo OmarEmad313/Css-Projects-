@@ -31,10 +31,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 h1,
-h2,
-h3 {
+h2 {
   color: rgb(0, 35, 208);
   font-family: "Patua one", cursive;
+  font-size: 2em;
 }
 button {
   cursor: pointer;
@@ -91,7 +91,7 @@ header .tabs {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  background: url("../../src/imgs/javascript-js-seeklogo.com.svg") 0 /50% 100% no-repeat,
+  background: url("../src/imgs/javascript-js-seeklogo.com.svg") 0 /50% 100% no-repeat,
     linear-gradient(to right, #f7df1e, #f7df1e 50%, transparent 50%);
 }
 .part_1 {
@@ -124,7 +124,6 @@ header .tabs {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-
   flex-wrap: wrap;
   background-color: rgb(107 107 107);
   background: url("https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-icon-marilyn-scott-0.png")
@@ -195,7 +194,7 @@ header .tabs {
 .results {
   width: 100vw;
   height: 100vh;
-  background: url("../../src/imgs/jefferson-santos-9SoCnyQmkzI-unsplash.jpg") 0 /
+  background: url("../src/imgs/jefferson-santos-9SoCnyQmkzI-unsplash.jpg") 0 /
     cover no-repeat;
   display: flex;
   flex-direction: column;
@@ -203,6 +202,7 @@ header .tabs {
   align-items: center;
 }
 .results h1 {
+  font-size: 3em;
   color: rgb(209 209 209);
   text-align: center;
   letter-spacing: 3px;
@@ -278,6 +278,9 @@ footer {
   }
   .results p {
     width: 80vh;
+  }
+  .results h1 {
+    font-size: 2.4em;
   }
   footer {
     align-content: center;
