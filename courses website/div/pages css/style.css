@@ -27,6 +27,12 @@ h3 {
   color: rgb(0, 35, 208);
   font-family: "Patua one", cursive;
 }
+button{
+  cursor: pointer;
+}
+i{
+  cursor: pointer;
+}
 header {
   width: 100%;
   height: 5rem;
@@ -160,5 +166,99 @@ display: flex;
 flex-direction: column;
 align-content: center;
 justify-content: flex-start;
+}
+[class*="program_"] img{
+align-self: center;
+
+}
+[class*="program_"] h2{
+display: block;
+text-align: center;
+color:rgb( 0, 35, 108);
+
+}
+.btn{
+display: block;
+color: white;
+background-color:rgb( 247, 208, 2);
+border: none;
+border-radius: 4px;
+padding: 5px;
+font-size: 2em;
+}
+
+.btn:hover{
+background-color: rgba(247, 208, 2,0.8);
+}
+.results{
+  width:100vw;
+  height: 100vh;
+  background: url("../../src/imgs/jefferson-santos-9SoCnyQmkzI-unsplash.jpg") 0 / cover no-repeat;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.results h1{
+  color: rgb(209 209 209);
+font-size: 3em;
+text-align: center;
+letter-spacing: 3px;
+
+}
+.results p{
+  width: 60vw;
+  margin: 10px ;
+color: rgb(209 209 209);
+font-size: 2em;
+text-align: center;
+
+}
+.results .btn{
+padding: 10px;
+border-radius: 7px;
+}
+
+footer{
+  height:250px;
+width: 100vw;
+display: flex;
+flex-direction: column;
+}
+.social{
+ 
+  width: 20%;
+  margin: 20px 0 60px 0px;
+  align-self: center;
+  display: flex;
+  flex-direction:row ;
+  justify-content: space-around;
+}
+.social i{
+  color: rgb(61,61,61);
+font-size: 3em;
+}
+.social i:hover{
+color: rgb(255, 235, 59);
+}
+.info{
+display: block;
+
+}
+.copyright{
+float: left;
+margin: 40px 0px 0px 60px;
+font-size: 1.2em;
+}
+.links{
+  margin: 40px 60px 0px 0px;
+float: right;
+font-size: 1.2em;
+}
+@media(max-width:800px){
+.free_training{
+
+  
+}
 
 }
