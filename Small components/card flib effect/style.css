@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(
+    to right,
+    rgb(70, 58, 100) 33.3333%,
+    rgb(23, 100, 45) 33.3333%,
+    rgb(23, 100, 45) 66.6666%,
+    yellow 66.6666%
+  );
+  height: 1oovh;
+  font-family: fantasy;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  width: 860px;
+  margin: 20px auto;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  position: relative;
+  background: #262626;
+  width: 170px;
+  border: 1px solid #fff;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  color: #fff;
+  font-size: 14px;
+}
+nav ul li:hover {
+  background: crimson;
+}
+nav ul ul {
+  display: none;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav li .sub {
+  position: absolute;
+}
+.menu-2 {
+  margin-left: 170px;
+}
+.card_wrapper {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+display: grid;
+place-content: center;
+}
+.card_wrapper .card {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  box-shadow: 2px 2px, 1px 1px inset;
+transition: 3s;
+}
+.card_wrapper .card:hover{
+transform: rotateY(0.5turn);
+
+
+
+}
+.front_face,
+.back_face {
+position: absolute;
+top: 0;
+left: 0;
+
+}
+
+.front_face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: greenyellow;
+}
