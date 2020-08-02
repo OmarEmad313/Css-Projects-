@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  color: rgb(192, 192, 192);
+  font-family: "Red Rose", cursive, sans-serif;
+  font-size: 1.25em;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100vw;
+}
+nav {
+  display: flex;
+  justify-content: flex-start;
+  position: fixed;
+  margin: 0;
+  background-color: hsl(24, 100%, 50%);
+  width: 100vw;
+  height: 4em;
+}
+.tabs_container {
+  margin: 0;
+  padding: 0 3em;
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.tabs_container li {
+  padding: 10px;
+  list-style: none;
+  text-align: center;
+  background-color: #e7305b;
+  border-radius: 4px;
+  border: solid 1px black;
+}
+
+.tabs_container > li {
+  position: relative;
+  display: inline-block;
+  margin-left: 2em;
+}
+.sub_tabs_container:hover .sub {
+  display: block;
+}
+.sub {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: none;
+}
+
+.tabs_container a {
+  font-size: 1.2em;
+  color: rgb(235, 235, 235);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.tabs_container a:hover {
+  color: rgb(58, 110, 165);
+}
+
+.content_container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: url(//unsplash.it/1000/1000);
+}
+.content_container p {
+  display: grid;
+  place-content: center;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .tabs_container {
+    display: none;
+  }
+  .btn span{
+    width:10px;
+    height:10px ;
+    background-color: rgb(58, 110, 165);
+
+
+
+  }
+  .btn span,
+  .btn span::before,
+  .btn span::after {
+ 
+  }
+}
