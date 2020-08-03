@@ -1,3 +1,35 @@
+:root {
+  --base-size: 1em;
+  --type-scale: 1.125;
+  --h5: calc(var(--base-size) * var(--type-scale));
+  --h4: calc(var(--h5) * var(--type-scale));
+  --h3: calc(var(--h4) * var(--type-scale));
+  --h2: calc(var(--h3) * var(--type-scale));
+  --h1: calc(var(--h2) * var(--type-scale));
+}
+
+
+h1 {font-size: var(--h1);}
+
+
+h2 {font-size: var(--h2);}
+
+
+h3 {font-size: var(--h3);}
+
+
+h4 {font-size: var(--h4);}
+
+
+h5 {font-size: var(--h5);}
+
+
+p {font-size: var(--base-size);}
+
+
+small, .text_small {font-size: calc(var(--base-size) / var(--type-scale));}
+
+
 *,
 *::before,
 *::after {
@@ -15,6 +47,7 @@ body {
 nav {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   position: fixed;
   margin: 0;
   background-color: hsl(24, 100%, 50%);
@@ -31,11 +64,11 @@ nav {
   align-items: center;
 }
 .tabs_container li {
-  padding: 10px;
+  padding: 0.5em;
   list-style: none;
   text-align: center;
   background-color: #e7305b;
-  border-radius: 4px;
+  border-radius: 0.2em;
   border: solid 1px black;
 }
 
@@ -43,9 +76,6 @@ nav {
   position: relative;
   display: inline-block;
   margin-left: 2em;
-}
-.sub_tabs_container:hover .sub {
-  display: block;
 }
 .sub {
   padding: 0;
@@ -56,8 +86,12 @@ nav {
   display: none;
 }
 
+.sub_tabs_container:hover .sub {
+  display: block;
+}
+
 .tabs_container a {
-  font-size: 1.2em;
+  font-size: 1em;
   color: rgb(235, 235, 235);
   text-decoration: none;
   text-transform: uppercase;
@@ -65,13 +99,19 @@ nav {
 .tabs_container a:hover {
   color: rgb(58, 110, 165);
 }
-
+.toggle_nav {
+  width: auto;
+  display: none;
+}
+.btn {
+  display: none;
+}
 .content_container {
   width: 100vw;
   height: 100vh;
   display: grid;
   place-items: center;
-  background: url(//unsplash.it/1000/1000);
+  background: url(//unsplash.it/1000/1000) 0 / cover;
 }
 .content_container p {
   display: grid;
@@ -80,21 +120,80 @@ nav {
   height: 300px;
   text-align: center;
 }
+
+
 @media screen and (max-width: 800px) {
   .tabs_container {
     display: none;
+    
   }
-  .btn span{
-    width:10px;
-    height:10px ;
+  nav {
+    min-height: 70px;
+    height: auto;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  .btn {
+    display: block;
+  }
+  .btn span {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 6px;
+    border: solid green 1px;
+    border-radius: 3px;
     background-color: rgb(58, 110, 165);
-
-
-
   }
   .btn span,
   .btn span::before,
   .btn span::after {
- 
+    width: 50px;
+    height: 6px;
+    border: solid green 1px;
+    border-radius: 3px;
+    background-color: rgb(58, 110, 165);
   }
+  .btn span::before,
+  .btn span::after {
+    position: absolute;
+    content: "";
+    left: -1px;
+  }
+  .btn span::before {
+    top: -11px;
+  }
+  .btn span::after {
+    top: 10px;
+  }
+ 
+  .toggle_nav:checked ~ .tabs_container {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    width: auto;
+    margin: 20px 0px 10px 0px;
+    padding: 0;}
+.tabs_container > li {
+margin-bottom: 7px;
+  margin-left: 2em;
+}
+.tabs_container li {
+  padding:1em;
+}
+ .toggle_nav:checked ~ .btn{
+margin-top: 20px;
+ }
+ 
+ .sub{
+   display: block;
+   top: 0;
+   left:120px
+ }
+ .sub_tabs{
+   padding: 2px;
+   font-size: 0.7em;
+ }
 }
