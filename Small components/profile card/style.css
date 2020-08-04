@@ -1,0 +1,87 @@
+:root {
+  --primary-color: #dd2c00;
+  --secondary-color: #ff5722;
+  --third-color: #00bcd4;
+}
+html {
+  font-size: 10px;
+}
+body {
+ margin: 0;
+ padding: 0;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+.card {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  margin: 0;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  color: var(--third-color);
+}
+
+.profile__image {
+  border-radius: 50%;
+  border: 4px solid white;
+  margin: 0 auto 1em;
+}
+.profile__links {
+  margin: 0 auto 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 10rem;
+  color: blue;
+}
+.fab {
+  cursor: pointer;
+  font-size: 1.3rem;
+  opacity: 0.6;
+}
+.fab:hover {
+  opacity: 1;
+}
+.profile__name {
+  
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0;
+}
+.profile__name::after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 0.05rem;
+  background-color: var(--third-color);
+ margin: 0.2em auto;
+ opacity: 0.4;
+}
+.profile__position{
+font-size: 1.4rem;
+}
+
+@media (min-width:400px)
+{.card{
+    flex-direction: row;
+}
+.profile--main{
+margin-left: 2em;
+text-align: left;
+}
+
+.profile__name::after{
+    margin-left: 0;
+}
+
+
+
+
+
+}
